@@ -2,3 +2,7 @@
 /* Fuentes: Lovelo & Aileron Regular */
 /* Color principal: #051d40 */
 /* Color secundario: #56aeff */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -2,3 +2,10 @@
 /* Fuentes: Lovelo & Aileron Regular */
 /* Color principal: #051d40 */
 /* Color secundario: #56aeff */
+.imagen {
+  background-image: url("../assets/imagen2.jpeg");
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}

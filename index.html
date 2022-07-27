@@ -28,17 +28,17 @@
         <div
           class="container flex flex-wrap justify-between items-center mx-auto"
         >
-            <a
-              href="https://bootcoop.github.io/Boot-Coop-Site/"
-              class="flex items-center"
-            >
-              <img
-                src="./assets/logoRecortado.png"
-                class="m-3 h-10 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)]"
-                alt="Boot coop Logo"
-              />
-              <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">BOOT COOP</span> -->
-            </a>
+          <a
+            href="https://bootcoop.github.io/Boot-Coop-Site/"
+            class="flex items-center"
+          >
+            <img
+              src="./assets/logoRecortado.png"
+              class="m-3 h-10 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)]"
+              alt="Boot coop Logo"
+            />
+            <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">BOOT COOP</span> -->
+          </a>
           <div class="flex items-center md:order-2">
             <button
               type="button"
@@ -194,7 +194,7 @@
                       Español (ES)
                     </div>
                   </a>
-                </li>                
+                </li>
               </ul>
             </div>
             <button
@@ -269,22 +269,30 @@
       </nav>
     </header>
 
-    <main class="mt-20">
+    <main>
       <!-- HERO -->
-<!-- Rama Mike -->
-      <section class="dark:bg-gray-900">
+
+      <section class="dark:bg-gray-900 relative">
+        <div id="particles-js" class="h-full w-full absolute"></div>
         <div
           class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
         >
-          <div
-            class="cursor-pointer p-7 w-auto inline-flex"
-          >
-            <img
-              class="h-auto w-auto drop-shadow-[0_0_4px_rgba(250,250,250,0.9)]"
-              src="./assets/bootcoop.png"
-              alt=""
-            />
+          <div class="cursor-pointer pt-40 pb-20 w-auto inline-flex">
+            <div class="relative dark:bg-gray-900">
+              <img
+                class="h-full w-full drop-shadow-[0_0_4px_rgba(250,250,250,0.9)]"
+                src="./assets/bootcoop.png"
+                alt=""
+              />
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="pt-10 dark:bg-gray-900 relative">
+        <div
+          class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
+        >
           <h1
             class="mb-4 mt-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
           >
@@ -295,18 +303,18 @@
           >
             <a
               href="#contactus"
-              class="inline-flex justify-center my-4 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              class="absolute inline-flex justify-center my-4 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Contact us
             </a>
           </div>
         </div>
       </section>
-      <!-- prueba -->
 
       <!-- ABOUT US -->
+      <!-- Comentario de prueba  -->
 
-      <section class="bg-white dark:bg-gray-900" id="aboutus">
+      <section class="bg-white dark:bg-gray-900 pt-20" id="aboutus">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div class="mb-8 lg:mb-16 text-center">
             <h2
@@ -486,13 +494,41 @@
             class="grid grid-cols-2 gap-8 sm:gap-12 md:grid-cols-4 lg:grid-cols-7 w-full p-3"
           >
             <!--  spin, pulse, ping, and bounce. -->
-            <img class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin" src="./assets/techs/angular-logo.svg" alt="angular" />
-            <img class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin" src="./assets/techs/CSS3-logo.svg" alt="CSS3" />
-            <img class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin" src="./assets/techs/HTML5-logo.svg" alt="HTML5" />
-            <img class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin" src="./assets/techs/react-logo.svg" alt="react" />
-            <img class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin" src="./assets/techs/nextjs-logo.svg" alt="nextjs" />
-            <img class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin" src="./assets/techs/js-logo.svg" alt="js" />
-            <img class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin" src="./assets/techs/solidity.svg" alt="solidity" />
+            <img
+              class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin"
+              src="./assets/techs/angular-logo.svg"
+              alt="angular"
+            />
+            <img
+              class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin"
+              src="./assets/techs/CSS3-logo.svg"
+              alt="CSS3"
+            />
+            <img
+              class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin"
+              src="./assets/techs/HTML5-logo.svg"
+              alt="HTML5"
+            />
+            <img
+              class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin"
+              src="./assets/techs/react-logo.svg"
+              alt="react"
+            />
+            <img
+              class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin"
+              src="./assets/techs/nextjs-logo.svg"
+              alt="nextjs"
+            />
+            <img
+              class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin"
+              src="./assets/techs/js-logo.svg"
+              alt="js"
+            />
+            <img
+              class="h-40 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] hover:animate-spin"
+              src="./assets/techs/solidity.svg"
+              alt="solidity"
+            />
           </div>
         </div>
       </section>
@@ -1070,31 +1106,7 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <script src="./js/particles.min.js"></script>
     <script src="./js/index.js"></script>
-    <!-- <script>
-      const $form = document.querySelector("#form");
-      $form.addEventListener("submit", handleSubmit);
-      async function handleSubmit(event) {
-        event.preventDefault();
-        const form = new FormData(this);
-        const email = form.get("email");
-        const subject = form.get("subject");
-        const message = form.get("message");
-        console.log(email);
-        console.log(subject);
-        console.log(message);
-
-        const response = await fetch(this.action, {
-          method: this.method,
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify([
-            [email, subject, message, new Date().toLocaleString()],
-          ]),
-        });
-        await response.json();
-      }
-    </script> -->
   </body>
 </html>

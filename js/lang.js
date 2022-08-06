@@ -1,6 +1,6 @@
 var language = {
   es: {
-    lang: "Español (ES)",
+    lang: "ES",
     nav: {
       home: "Inicio",
       about: "Nosotros",
@@ -82,7 +82,7 @@ var language = {
     }
   },
   en: {
-    lang: "English (US)",
+    lang: "EN",
     nav: {
       home: "Home",
       about: "About",

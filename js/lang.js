@@ -39,14 +39,7 @@ var language = {
     },
     technologies: {
       title: "Tecnologías",
-      text: "Sabemos que es un mundo acelerado, por lo que es bueno tener opciones.",
-      web: {
-        title: "Web",
-        frontend: "Frontend",
-        backend: "Backend"
-      },
-      mobile: "Móviles",
-      database: "Bases de datos"
+      text: "Sabemos que es un mundo acelerado, por lo que es bueno tener opciones."
     },
     portfolio: {
       title: "Portafolio",
@@ -128,14 +121,7 @@ var language = {
     },
     technologies: {
       title: "Technologies",
-      text: "We know it´s a fast-paced world, so, it´s good to have options.",
-      web: {
-        title: "Web",
-        frontend: "Frontend",
-        backend: "Backend"
-      },
-      mobile: "Mobile",
-      database: "Database"
+      text: "We know it's a fast-paced world, so, it's good to have options."
     },
     portfolio: {
       title: "Our Portfolio",

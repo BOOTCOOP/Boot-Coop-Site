@@ -16,3 +16,7 @@
 html{
     font-family: 'Lovelo';
 }
+
+h1 {
+  font-size: clamp(26px, 4.75vw, 64px) !important;
+}

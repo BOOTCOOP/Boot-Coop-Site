@@ -6,15 +6,9 @@
 /* Logo con BootCoop: http://drive.google.com/uc?export=view&id=1VrTd2NOmrFDsW3fBOPzx0a_RkIYnyFh3 */
 /* Logo: http://drive.google.com/uc?export=view&id=1e9ghZwtWgswSg6HKwmHB8be6hDN5y1sb */
 
-@font-face {
-    font-family: 'Lovelo';
-    src: url('../fonts/Lovelo\ Black.otf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
 
 html{
-    font-family: 'Lovelo';
+    scroll-behavior:smooth;
 }
 
 h1 {

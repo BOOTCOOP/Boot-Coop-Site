@@ -6,6 +6,7 @@ var language = {
       about: "Nosotros",
       tech: "Tecnologías",
       portfolio: "Portafolio",
+      contact: "Contacto"
     },
     title: "Cooperativa de soluciones IT",
     contact_us: "Contactanos",
@@ -58,7 +59,7 @@ var language = {
       text: "¿Tienes un problema técnico? ¿Quiere enviar comentarios sobre una función beta? ¿Necesita detalles sobre nuestro plan Business? Haznos saber.",
       email: {
         label: "Email",
-        placeholder: "name@flowbite.com"
+        placeholder: "nombre@dominio.com"
       },
       subject: {
         label: "Asunto",
@@ -80,7 +81,8 @@ var language = {
       home: "Home",
       about: "About",
       tech: "Technologies",
-      portfolio: "Portfolio"
+      portfolio: "Portfolio",
+      contact: "Contact"
     },
     title: "IT Solutions Cooperative",
     contact_us: "Contact us",
@@ -140,7 +142,7 @@ var language = {
       text: "Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.",
       email: {
         label: "Your email",
-        placeholder: "name@flowbite.com"
+        placeholder: "name@domain.com"
       },
       subject: {
         label: "Subject",

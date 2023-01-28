@@ -44,19 +44,27 @@ var language = {
     },
     portfolio: {
       title: "Portafolio",
-      text: "Explore toda la colección de componentes y elementos web de código abierto creados con las clases de utilidad de Tailwind",
+      text: "Una muestra de nuestra experiencia y habilidades en acción a través de nuestros proyectos más destacados.",
       item_1: {
-        title: "E-commerce Vintage",
-        subtitle: "E-commerce desarrollado en React con tailwind"
+        title: "Buspack",
+        subtitle: "Plataforma online de logística, basada en la gestión de encomiendas para todo el país"
       },
       item_2: {
-        title: "Marketplace NFT",
-        subtitle: "Una plataforma online basada en blockchain para vender y comprar tokens no fungibles (NFT)."
+        title: "Somos Grissia",
+        subtitle: "Web Responsive desarrollada en JavaScript para emprendimiento de Community Manager"
+      },
+      item_3: {
+        title: "Move.me",
+        subtitle: "Web Responsive desarrollada en React para emprendimiento de Personal Trainer"
+      },
+      item_4: {
+        title: "Formulario IPLAN Biz",
+        subtitle: "Formulario desarrollado en JavaScript para incrementar las ganancias del negocio de Cloud"
       },
     },
     contact_form: {
       title: "Contactanos",
-      text: "¿Tienes un problema técnico? ¿Quiere enviar comentarios sobre una función beta? ¿Necesita detalles sobre nuestro plan Business? Haznos saber.",
+      text: "¡Hablemos de tus proyectos! Contactanos para saber cómo podemos ayudarte.",
       email: {
         label: "Email",
         placeholder: "nombre@dominio.com"
@@ -127,19 +135,27 @@ var language = {
     },
     portfolio: {
       title: "Our Portfolio",
-      text: "Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind",
+      text: "A sample of our experience and skills in action through our most outstanding projects.",
       item_1: {
-        title: "E-commerce Vintage",
-        subtitle: "E-commerce developed in React with tailwind"
+        title: "Buspack",
+        subtitle: "Online logistics platform, based on package management for the entire country"
       },
       item_2: {
-        title: "Marketplace NFT",
-        subtitle: "A blockchain-based online platform to sell and buy non-fungible tokens (NFTs)."
+        title: "Somos Grissia",
+        subtitle: "Responsive Web Developed in JavaScript for a Community Manager Entrepreneurship"
+      },
+      item_3: {
+        title: "Move.me",
+        subtitle: "Responsive Web developed in React for Personal Trainer entrepreneurship"
+      },
+      item_4: {
+        title: "IPLAN Biz Form",
+        subtitle: "Form developed in JavaScript to increase the profits of Cloud business"
       },
     },
     contact_form: {
       title: "Contact Us",
-      text: "Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.",
+      text: "Let's talk about your projects! Contact us to find out how we can help you.",
       email: {
         label: "Your email",
         placeholder: "name@domain.com"

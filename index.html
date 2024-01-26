@@ -22,6 +22,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="http://drive.google.com/uc?export=view&id=1e9ghZwtWgswSg6HKwmHB8be6hDN5y1sb" />
+     <!-- WhatsApp Plugin CSS -->
+     <link rel="stylesheet" href="assets/plugins/whatsApp/css/whatsapp-chat-min.css" />
     <title>Boot Coop</title>
   </head>
 
@@ -803,5 +805,18 @@ xl	1280px	@media (min-width: 1280px) { ... }
     <script src="./js/particles.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/lang.js"></script>
+    <!-- Plugin WhatsApp -->
+    <div id="pluginWhatsApp"></div>
+    <script type="text/javascript" src="assets/plugins/whatsApp/js/whatsapp-chat.js"></script>
+    <script type="text/javascript" src="assets/plugins/whatsApp/config.js"></script>
+    <script type="text/javascript">
+        whatsappchat.configUser({
+            selector: config.general.selector,
+            users: usersWhats,
+            headerMessage: config.msg.headerMsg,
+            chatBoxMessage: config.msg.chatboxMsg,
+            color: config.msg.colorMsg,
+        });
+    </script>
   </body>
 </html>

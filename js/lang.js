@@ -170,7 +170,7 @@ var language = {
       text: "We know it's a fast-paced world, so, it's good to have options."
     },
     portfolio: {
-      title: "Our Portfolio",
+      title: "Success Stories",
       text: "A sample of our experience and skills in action through our most outstanding projects.",
       item_1: {
         title: "Buspack",

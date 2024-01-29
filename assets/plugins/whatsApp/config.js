@@ -20,7 +20,7 @@ var config = {
     phone: '5491168595195',
     depart: 'Founder & Frontend Dev',
     image: 'assets/plugins/whatsApp/img/profile/profile-pic2.png',
-    active: false,
+    active: true,
   },
 };
 

@@ -29,6 +29,14 @@ body {
   height: 150vh;
 }
 
+.nav-link {
+  color: #96a4b9; /* Estilo predeterminado para enlaces no activos */
+}
+
+.nav-link.active {
+  color: white; /* Estilo para el enlace activo (cambia a tu color deseado) */
+}
+
 #typed-container {
   min-height: 150px;
 }

@@ -180,3 +180,15 @@ particlesJS({
   },
   retina_detect: true,
 });
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function () {
+    // Elimina la clase "active" de todos los enlaces
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Agrega la clase "active" al enlace clicado
+    this.classList.add('active');
+  });
+});

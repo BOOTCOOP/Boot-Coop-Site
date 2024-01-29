@@ -21,3 +21,18 @@ h1 {
   animation-duration: 1s; /* Duración de la animación en segundos */
   animation-delay: 0.5s; /* Retraso de la animación en segundos */
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 150vh;
+}
+
+#typed-container {
+  min-height: 150px;
+}
+
+#typed-output {
+  display: inline-block;
+}

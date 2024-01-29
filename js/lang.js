@@ -1,3 +1,31 @@
+const texts = {
+  es: ["Cooperativa de soluciones TI", "Cooperativa de Diseño Web", "Cooperativa de Desarrollo de E-Commerce", "Cooperativa de Diseño UX/UI"],
+  en: ["Cooperative of IT Solutions", "Cooperative of Web Design", "Cooperative of UX/UI Design", "Cooperative of E-Commerce Development"]
+};
+
+const options = {
+  typeSpeed: 70,
+  backSpeed: 30,
+  smartBackspace: true,
+  showCursor: false,
+  loop: true,
+  
+};
+
+let typed;
+
+const setLanguage = (lang) => {
+  options.strings = texts[lang];
+  if (typed) {
+    typed.destroy(); // Destruye la instancia actual antes de crear una nueva
+  }
+  typed = new Typed("#typed-output", options);
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  setLanguage('es');
+});
+
 var language = {
   es: {
     lang: "ES",
@@ -8,7 +36,7 @@ var language = {
       portfolio: "Portafolio",
       contact: "Contacto"
     },
-    title: "Cooperativa de soluciones IT",
+    title: setLanguage.bind(null, 'es'),
     contact_us: "Contactanos",
     about_us: {
       title: "Nosotros",
@@ -92,7 +120,7 @@ var language = {
       portfolio: "Portfolio",
       contact: "Contact"
     },
-    title: "IT Solutions Cooperative",
+    title: setLanguage.bind(null, 'en'),
     contact_us: "Contact us",
     about_us: {
       title: "About us",
@@ -204,18 +232,16 @@ const translate = (prop, subpaths = []) => {
   })
 }
 
-const hash = window.location.hash.replace("#", "")
-const lang = language[hash]
-if (lang) {
-  translate(lang)
-}
-
-
-
-window.onhashchange = (e) => {
-  const langs = Object.keys(language)
-  const hash = e.target.location.hash.replace("#", "")
-  if (langs.includes(hash)) {
-    location.reload(true)
+const updateLanguage = () => {
+  const hash = window.location.hash.replace("#", "")
+  const lang = language[hash]
+  if (lang) {
+    setLanguage(hash);
+    translate(lang);
   }
 }
+
+window.onhashchange = updateLanguage;
+
+// Llama a updateLanguage también al cargar la página para manejar el estado inicial
+updateLanguage();

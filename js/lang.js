@@ -70,6 +70,10 @@ var language = {
       title: "Tecnologías",
       text: "Sabemos que es un mundo acelerado, por lo que es bueno tener opciones."
     },
+    clients: {
+      title: "Nuestros Clientes",
+      text: "Sabemos que es un mundo acelerado, por lo que es bueno tener opciones"
+    },
     portfolio: {
       title: "Casos de éxito",
       text: "Una muestra de nuestra experiencia y habilidades en acción a través de nuestros proyectos más destacados.",
@@ -168,6 +172,10 @@ var language = {
     technologies: {
       title: "Technologies",
       text: "We know it's a fast-paced world, so, it's good to have options."
+    },
+    clients: {
+      title: "Our Clients",
+      text: "We understand that it's a fast-paced world, so having options is a good thing"
     },
     portfolio: {
       title: "Success Stories",

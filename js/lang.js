@@ -1,3 +1,31 @@
+const texts = {
+  es: ["Cooperativa de soluciones TI", "Cooperativa de Diseño Web", "Cooperativa de Desarrollo de E-Commerce", "Cooperativa de Diseño UX/UI"],
+  en: ["Cooperative of IT Solutions", "Cooperative of Web Design", "Cooperative of UX/UI Design", "Cooperative of E-Commerce Development"]
+};
+
+const options = {
+  typeSpeed: 70,
+  backSpeed: 30,
+  smartBackspace: true,
+  showCursor: false,
+  loop: true,
+  
+};
+
+let typed;
+
+const setLanguage = (lang) => {
+  options.strings = texts[lang];
+  if (typed) {
+    typed.destroy(); // Destruye la instancia actual antes de crear una nueva
+  }
+  typed = new Typed("#typed-output", options);
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  setLanguage('es');
+});
+
 var language = {
   es: {
     lang: "ES",
@@ -8,7 +36,7 @@ var language = {
       portfolio: "Portafolio",
       contact: "Contacto"
     },
-    title: "Cooperativa de soluciones IT",
+    title: setLanguage.bind(null, 'es'),
     contact_us: "Contactanos",
     about_us: {
       title: "Nosotros",
@@ -42,24 +70,36 @@ var language = {
       title: "Tecnologías",
       text: "Sabemos que es un mundo acelerado, por lo que es bueno tener opciones."
     },
+    clients: {
+      title: "Nuestros Clientes",
+      text: "Sabemos que es un mundo acelerado, por lo que es bueno tener opciones"
+    },
     portfolio: {
-      title: "Portafolio",
+      title: "Casos de éxito",
       text: "Una muestra de nuestra experiencia y habilidades en acción a través de nuestros proyectos más destacados.",
       item_1: {
         title: "Buspack",
-        subtitle: "Plataforma online de logística, basada en la gestión de encomiendas para todo el país"
+        subtitle: "Plataforma líder en logística, especializada en la gestión eficiente de encomiendas a nivel nacional. Nuestra solución online proporciona un sistema integral que optimiza el proceso logístico, asegurando entregas rápidas y seguras"
       },
       item_2: {
-        title: "Somos Grissia",
-        subtitle: "Web Responsive desarrollada en JavaScript para emprendimiento de Community Manager"
+        title: "Facultad de derecho",
+        subtitle: "Colaboramos en el mantenimiento del sitio web de la Facultad de Derecho, garantizando una presencia en línea actualizada y funcional para satisfacer las necesidades de la comunidad académica y los visitantes"
       },
       item_3: {
-        title: "Move.me",
-        subtitle: "Web Responsive desarrollada en React para emprendimiento de Personal Trainer"
+        title: "Dynamo IOT",
+        subtitle: "Backoffice logístico personalizado para una empresa destacada en el sector. Esta herramienta permite una administración eficiente de conductores y vehículos, mejorando la planificación de rutas y la asignación de recursos"
       },
       item_4: {
-        title: "Formulario IPLAN Biz",
-        subtitle: "Formulario desarrollado en JavaScript para incrementar las ganancias del negocio de Cloud"
+        title: "Moveme",
+        subtitle: "Aplicación web responsive diseñada para emprendimientos de Personal Trainer. Brinda una experiencia intuitiva, facilitando la interacción entre entrenadores y clientes para una gestión efectiva"
+      },
+      item_5: {
+        title: "Somos Grissia",
+        subtitle: "Plataforma web responsive, con diseño minimalista para emprendimientos de Community Manager. Ofrece herramientas eficaces para gestionar y potenciar la presencia online, simplificando la tarea de administrar contenido y aumentar la visibilidad en redes sociales"
+      },
+      item_6: {
+        title: "Box Vision",
+        subtitle: "Aplicación móvil de óptica con realidad aumentada para probar virtualmente distintos modelos de lentes, ofreciendo una experiencia personalizada y conveniente"
       },
     },
     contact_form: {
@@ -92,7 +132,7 @@ var language = {
       portfolio: "Portfolio",
       contact: "Contact"
     },
-    title: "IT Solutions Cooperative",
+    title: setLanguage.bind(null, 'en'),
     contact_us: "Contact us",
     about_us: {
       title: "About us",
@@ -133,24 +173,36 @@ var language = {
       title: "Technologies",
       text: "We know it's a fast-paced world, so, it's good to have options."
     },
+    clients: {
+      title: "Our Clients",
+      text: "We understand that it's a fast-paced world, so having options is a good thing"
+    },
     portfolio: {
-      title: "Our Portfolio",
+      title: "Success Stories",
       text: "A sample of our experience and skills in action through our most outstanding projects.",
       item_1: {
         title: "Buspack",
-        subtitle: "Online logistics platform, based on package management for the entire country"
+        subtitle: "Leading logistics platform, specialized in the efficient management of parcels nationwide. Our online solution provides a comprehensive system that optimizes the logistics process, ensuring fast and secure deliveries"
       },
       item_2: {
-        title: "Somos Grissia",
-        subtitle: "Responsive Web Developed in JavaScript for a Community Manager Entrepreneurship"
+        title: "Facultad de derecho",
+        subtitle: "We collaborate on the maintenance of the Faculty of Law website, ensuring an updated and functional online presence to meet the needs of the academic community and visitors"
       },
       item_3: {
-        title: "Move.me",
-        subtitle: "Responsive Web developed in React for Personal Trainer entrepreneurship"
+        title: "Dynamo IOT",
+        subtitle: "Customized logistic backoffice for a prominent company in the sector. This tool enables efficient management of drivers and vehicles, enhancing route planning and resource allocation"
       },
       item_4: {
-        title: "IPLAN Biz Form",
-        subtitle: "Form developed in JavaScript to increase the profits of Cloud business"
+        title: "Moveme",
+        subtitle: "Responsive web application designed for Personal Trainer ventures. Provides an intuitive experience, facilitating interaction between trainers and clients for effective management"
+      },
+      item_5: {
+        title: "Somos Grissia",
+        subtitle: "Responsive web platform with a minimalist design for Community Manager ventures. Offers effective tools for managing and enhancing online presence, simplifying the task of content administration and increasing visibility on social media"
+      },
+      item_6: {
+        title: "Box Vision",
+        subtitle: "Augmented reality mobile application for an optical store, allowing virtual try-ons of different eyeglass models, providing a personalized and convenient experience"
       },
     },
     contact_form: {
@@ -204,18 +256,16 @@ const translate = (prop, subpaths = []) => {
   })
 }
 
-const hash = window.location.hash.replace("#", "")
-const lang = language[hash]
-if (lang) {
-  translate(lang)
-}
-
-
-
-window.onhashchange = (e) => {
-  const langs = Object.keys(language)
-  const hash = e.target.location.hash.replace("#", "")
-  if (langs.includes(hash)) {
-    location.reload(true)
+const updateLanguage = () => {
+  const hash = window.location.hash.replace("#", "")
+  const lang = language[hash]
+  if (lang) {
+    setLanguage(hash);
+    translate(lang);
   }
 }
+
+window.onhashchange = updateLanguage;
+
+// Llama a updateLanguage también al cargar la página para manejar el estado inicial
+updateLanguage();

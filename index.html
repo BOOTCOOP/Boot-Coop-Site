@@ -15,6 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/index.css">
+    <!-- CDN DE ANIMATED CSS -->
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
+
+    <!-- CDN DE TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <!-- CDN DE FLOWBITE -->
     <link
       rel="stylesheet"
@@ -22,6 +33,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="http://drive.google.com/uc?export=view&id=1e9ghZwtWgswSg6HKwmHB8be6hDN5y1sb" />
+     <!-- WhatsApp Plugin CSS -->
+     <link rel="stylesheet" href="assets/plugins/whatsApp/css/whatsapp-chat-min.css" />
     <title>Boot Coop</title>
   </head>
 
@@ -140,6 +153,7 @@
             class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-language-select"
           >
+          <nav>
             <ul
               class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
             >
@@ -147,7 +161,7 @@
                 <a
                   id="nav-home"
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-white bg-primary-700 rounded md:bg-transparent md:text-primary-700 md:p-0 dark:text-white"
+                  class="nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 active"
                   aria-current="page"
                   >Inicio</a
                 >
@@ -156,7 +170,7 @@
                 <a
                   id="nav-about"
                   href="#aboutus"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   >Nosotros</a
                 >
               </li>
@@ -164,7 +178,7 @@
                 <a
                   id="nav-tech"
                   href="#tech"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   >Tecnologías</a
                 >
               </li>
@@ -172,18 +186,19 @@
                 <a
                   id="nav-portfolio"
                   href="#portfolio"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   >Portafolio</a
                 >
               </li>
               <li>
                 <a
                   href="#contactus"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   >Contacto</a
                 >
               </li>
             </ul>
+          </nav>
           </div>
         </div>
       </nav>
@@ -201,13 +216,18 @@ xl	1280px	@media (min-width: 1280px) { ... }
       <section class="relative h-screen flex flex-col justify-center items-center">
         <div id="particles-js" class="h-full w-full absolute"></div>
         <img
-          class="z-10 my-8 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] w-64 sm:w-80 md:w-96 lg:w-128 xl:w-144 2xl:w-160"
+          class="z-10 my-8 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] w-64 sm:w-80 md:w-96 lg:w-128 xl:w-144 2xl:w-160 animate__animated animate__fadeInUp"
           src="./assets/bootcoopRecortado.png"
           alt="logo"
         />
-        <h1 id="title" class="z-10 my-9 tracking-tight leading-none text-gray-900 dark:text-white">
+        <!-- <h1 id="title" class="z-10 my-9 tracking-tight leading-none text-gray-900 dark:text-white animate__animated animate__fadeInUp">
           Cooperativa de soluciones IT
-        </h1>
+        </h1> -->
+        <div id="typed-container">
+          <span class="display: inline-block;">
+          <h1 id="typed-output" class="z-10 my-9 tracking-tight leading-none text-gray-900 dark:text-white animate__animated animate__fadeInUp"></h1>
+        </span>
+        </div>
         <a
           id="contact_us"
           href="#contactus"
@@ -224,11 +244,11 @@ xl	1280px	@media (min-width: 1280px) { ... }
         <div class="mb-8 lg:mb-16 text-center">
           <h2
             id="about_us-title"
-            class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white"
+            class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white animate__animated animate__fadeInUp"
           >
             Nosotros
           </h2>
-          <p id="about_us-text" class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          <p id="about_us-text" class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl animate__animated animate__fadeInUp">
             Somos una cooperativa de trabajo con el objetivo de brindar un atractivo producto a la medida de tus necesidades. Diseñamos y desarrollamos sitios web y aplicaciones para el proyecto que tenés en mente, tanto para grandes instituciones o empresas, como páginas personales o profesionales.
           </p>
         </div>
@@ -504,10 +524,10 @@ xl	1280px	@media (min-width: 1280px) { ... }
 
       <!-- CARDS PARA PORTFOLIO -->
 
-      <section id="portfolio" class="pt-24 px-4 lg:px-6 max-w-screen-lg mx-auto">
+      <section id="portfolio" class="pt-24 px-4 lg:px-6 max-w-screen-2xl mx-auto">
         <div class="mb-8 lg:mb-16 text-center">
           <h2 id="portfolio-title" class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white">
-            Portafolio
+            Casos de éxito
           </h2>
           <p
             id="portfolio-text"
@@ -518,7 +538,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
         </div>
         <div class="flex flex-wrap mx-8 gap-8 justify-center">
           <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://qa.derservicios.com.ar/">
+            <a target="_blank" href="https://www.buspack.com.ar/">
               <img
                 class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
                 src="./assets/projects/buspack.png"
@@ -533,13 +553,77 @@ xl	1280px	@media (min-width: 1280px) { ... }
                 id="portfolio-item_1-subtitle"
                 class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
               >
-                Plataforma online de logística, basada en la gestión de encomiendas para todo el país
+              Plataforma líder en logística, especializada en la gestión eficiente de encomiendas a nivel nacional. Nuestra solución online proporciona un sistema integral que optimiza el proceso logístico, asegurando entregas rápidas y seguras. 
+              </p>                
+            </div>
+          </div>
+          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
+            <a target="_blank" href="http://www.derecho.uba.ar/">
+              <img
+                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+                src="./assets/projects/facultaddedercho.png"
+                alt="Facultad de derecho"
+              />
+            </a>
+            <div class="p-5">
+              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+                Facultad de derecho
+              </h3>
+              <p
+                id="portfolio-item_2-subtitle"
+                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
+              >
+              Colaboramos en el mantenimiento del sitio web de la Facultad de Derecho, garantizando una presencia en línea actualizada y funcional para satisfacer las necesidades de la comunidad académica y los visitantes.
+              </p>                
+            </div>
+          </div>
+          
+
+          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
+            <a target="_blank" href="https://dynamoiot.com/">
+              <img              
+                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+                src="./assets/projects/dynamoiot.png"
+                alt="Dynamo IOT"
+              />
+            </a>
+            <div class="p-5">
+              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+                Dynamo IOT
+              </h3>
+              <p
+                id="portfolio-item_3-subtitle"
+                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
+              >
+              Backoffice logístico personalizado para una empresa destacada en el sector. Esta herramienta permite una administración eficiente de conductores y vehículos, mejorando la planificación de rutas y la asignación de recursos.
+              </p>                
+            </div>
+          </div>
+
+
+          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
+            <a target="_blank" href="https://moveme.vercel.app/">
+              <img
+                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+                src="./assets/projects/moveme.png"
+                  alt="moveme"
+              />
+            </a>
+            <div class="p-5">
+              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+                Moveme
+              </h3>
+              <p
+                id="portfolio-item_4-subtitle"
+                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
+              >
+              Aplicación web responsive diseñada para emprendimientos de Personal Trainer. Brinda una experiencia intuitiva, facilitando la interacción entre entrenadores y clientes para una gestión efectiva.
               </p>                
             </div>
           </div>
 
           <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://somosgrissia.com/">
+            <a target="_blank" href="https://grissia.vercel.app/">
               <img
                 class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
                 src="./assets/projects/somosGrissia.png"
@@ -551,58 +635,133 @@ xl	1280px	@media (min-width: 1280px) { ... }
                 Somos Grissia
               </h3>
               <p
-                id="portfolio-item_2-subtitle"
+                id="portfolio-item_5-subtitle"
                 class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
               >
-                Web Responsive desarrollada en JavaScript para emprendimiento de Community Manager
-              </p>                
-            </div>
-          </div>
-
-
-          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://moveme.vercel.app/">
-              <img
-                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
-                src="./assets/projects/moveme.png"
-                  alt="move.me"
-              />
-            </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                Move.me
-              </h3>
-              <p
-                id="portfolio-item_3-subtitle"
-                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
-              >
-              Web Responsive desarrollada en React para emprendimiento de Personal Trainer
+              Plataforma web responsive, con diseño minimalista para emprendimientos de Community Manager. Ofrece herramientas eficaces para gestionar y potenciar la presencia online, simplificando la tarea de administrar contenido y aumentar la visibilidad en redes sociales.
               </p>                
             </div>
           </div>
 
           <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://projectiplan-b249d.web.app/">
+            <a target="_blank" href="https://boxvision.com.ar/tablets/facetracking/">
             <img              
               class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
-              src="./assets/projects/IPLAN-Formulario.png"
-              alt="Formulario IPLAN Biz"
+              src="./assets/projects/boxvision.png"
+              alt="Box Vision"
             />
           </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                Formulario IPLAN Biz
+                Box Vision
               </h3>
               <p
-                id="portfolio-item_3-subtitle"
+                id="portfolio-item_6-subtitle"
                 class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
               >
-              Formulario desarrollado en JavaScript para incrementar las ganancias del negocio de Cloud
-              </p>                
+              Aplicación móvil de óptica con realidad aumentada para probar virtualmente distintos modelos de lentes, ofreciendo una experiencia personalizada y conveniente.              
+            </p>                
             </div>
           </div>         
           
         </div>
+      </section>
+
+
+      <!-- NUESTROS CLIENTES -->
+
+      <section id="tech" class="pt-24 px-4 lg:px-6 max-w-screen-xl mx-auto">
+        <h2
+          id="clients-title"
+          class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white"
+        >
+          Nuestros clientes
+        </h2>
+        <p id="clients-text" class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          Sabemos que es un mundo acelerado, por lo que es bueno tener opciones.
+        </p>
+        <div class="flex flex-wrap justify-center items-center gap-3 w-full overflow-x-auto">    
+          <img
+          data-tooltip-target="tooltip-Dynamo IOT" data-tooltip-placement="bottom" aria-labelledby="Dynamo IOT"
+              src="./assets/clients/dynamoiot.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Dynamo IOT"
+            />
+          <div id="tooltip-Dynamo IOT" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Dynamo IOT
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Camarco" data-tooltip-placement="bottom" aria-labelledby="Camarco"
+              src="./assets/clients/camarco.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Camarco"
+            />
+          <div id="tooltip-Camarco" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Camarco
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Ux Art" data-tooltip-placement="bottom" aria-labelledby="Ux Art"
+              src="./assets/clients/uxart.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="UxArt"
+            />
+          <div id="tooltip-Ux Art" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Ux Art
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Box Vision" data-tooltip-placement="bottom" aria-labelledby="Box Vision"
+              src="./assets/clients/boxvision.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Box Vision"
+            />
+          <div id="tooltip-Box Vision" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Box Vision
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Solanas" data-tooltip-placement="bottom" aria-labelledby="Solanas"
+              src="./assets/clients/solanas.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Solanas"
+            />          
+          <div id="tooltip-Solanas" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Solanas
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Municipalidad de Quilmes" data-tooltip-placement="bottom" aria-labelledby="Municipalidad de Quilmes"
+              src="./assets/clients/munidequilmes.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Municipalidad de Quilmes"
+            />
+          <div id="tooltip-Municipalidad de Quilmes" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Municipalidad de Quilmes
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Buspack" data-tooltip-placement="bottom" aria-labelledby="Buspack"
+              src="./assets/clients/buspack.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Buspack"
+            />
+          <div id="tooltip-Buspack" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Buspack
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Facultad de Derecho" data-tooltip-placement="bottom" aria-labelledby="Facultad de Derecho"
+              src="./assets/clients/facultaddederecho.png"
+              class="flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Facultad de derecho"
+            />
+            <div id="tooltip-Facultad de Derecho" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+              Facultad de Derecho
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>          
+        </div>       
       </section>
 
       <!-- FORMULARIO DE CONTACTO -->
@@ -803,5 +962,18 @@ xl	1280px	@media (min-width: 1280px) { ... }
     <script src="./js/particles.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/lang.js"></script>
+    <!-- Plugin WhatsApp -->
+    <div id="pluginWhatsApp"></div>
+    <script type="text/javascript" src="assets/plugins/whatsApp/js/whatsapp-chat.js"></script>
+    <script type="text/javascript" src="assets/plugins/whatsApp/config.js"></script>
+    <script type="text/javascript">
+        whatsappchat.configUser({
+            selector: config.general.selector,
+            users: usersWhats,
+            headerMessage: config.msg.headerMsg,
+            chatBoxMessage: config.msg.chatboxMsg,
+            color: config.msg.colorMsg,
+        });
+    </script>
   </body>
 </html>

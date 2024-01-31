@@ -33,7 +33,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/logoRecortado.png" />
-     <!-- WhatsApp Plugin CSS -->
+    <!-- WhatsApp Plugin CSS -->
      <link rel="stylesheet" href="assets/plugins/whatsApp/css/whatsapp-chat-min.css" />
     <title>Boot Coop</title>
   </head>
@@ -831,8 +831,19 @@ xl	1280px	@media (min-width: 1280px) { ... }
             >
               Enviar mensaje
             </button>
-          </form>
+          </form>       
+          <!-- ALERTA DE MENSAJE ENVIADO -->  
+          <div class="absolute bottom right-0 mb-16 mr-4">
+            <div id="toast-simple" class="hidden flex right-0 w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert">
+              <svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+              </svg>
+            <div class="ps-4 text-sm font-normal">Message sent successfully.</div>
+          </div>          
         </div>
+        
+        
+
       </section>
     </main>
 
@@ -869,7 +880,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/coopboot/"
+              href="https://www.instagram.com/cooperativaboot/"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               target="_blank"
             >
@@ -941,7 +952,6 @@ xl	1280px	@media (min-width: 1280px) { ... }
         </div>
       </div>
     </footer>
-    <!-- PRUEBA FACU -->
     <!-- SCRIPT DE FLOWBITE -->
     <script src="./tailwind.config.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>

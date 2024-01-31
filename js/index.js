@@ -43,8 +43,6 @@ themeToggleBtn.addEventListener("click", function () {
 
 // Implemento ENVIO de datos de Formulario
 const $form = document.querySelector("#form");
-const $api =
-  "https://v1.nocodeapi.com/bootcoop/google_sheets/gRLcUpIymIlVoBrX?tabId=contacto";
 $form.addEventListener("submit", handleSubmit);
 
 async function handleSubmit(event) {
@@ -54,19 +52,53 @@ async function handleSubmit(event) {
   const subject = form.get("subject");
   const message = form.get("message");
 
-  const response = await fetch($api, {
-    method: this.method,
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify([
-      [email, subject, message, new Date().toLocaleString()],
-    ]),
-  });
-  if (response.ok) {
-    const reseteo = this.reset();
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  var requestOptions = {
+    method: "post",
+    headers: myHeaders,
+    redirect: "follow",
+    body: JSON.stringify([[email, subject, message, new Date().toLocaleString()]])
+  };
+
+  // Intenta enviar los datos al servidor
+  try {
+    const response = await fetch("https://v1.nocodeapi.com/bootcoop/google_sheets/OYBWLbNeeBCvOaeU?tabId=contacto", requestOptions);
+
+    if (response.ok) {
+      // Muestra el mensaje de toast si la respuesta es exitosa
+      const toastElement = document.getElementById("toast-simple");
+      toastElement.classList.remove("hidden");
+
+      // Oculta el mensaje después de 3 segundos (ajusta el tiempo según tus preferencias)
+      setTimeout(() => {
+        toastElement.classList.add("hidden");
+      }, 3000);
+
+      // También puedes reiniciar el formulario o realizar otras acciones después de enviar
+      $form.reset();
+    } else {
+      console.log('Error al enviar el formulario');
+    }
+  } catch (error) {
+    console.error('Error en la solicitud:', error);
   }
 }
+
+
+//   const response = await fetch($api, {
+//     method: 'POST',
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify([
+//       [email, subject, message, new Date().toLocaleString()],
+//     ]),
+//   });
+//   if (response.ok) {
+//     const reseteo = this.reset();
+//   }
+// }
 
 //particulas
 

@@ -52,8 +52,14 @@ body {
 
 .dark-logo {
   background-image: url('./assets/clients/uxart.png');
+  background-image: url('./assets/clients/solanasDark.png');
+  background-image: url('./assets/clients/facultadDeDerechoDark.png');
+  background-image: url('./assets/clients/boxVisionDark.png');
 }
 
 .light-logo {
   background-image: url('./assets/clients/uxartColor.png');
+  background-image: url('./assets/clients/solanas.png');
+  background-image: url('./assets/clients/facultadDeDerecho.png');
+  background-image: url('./assets/clients/boxVision.png');
 }

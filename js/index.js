@@ -2,12 +2,21 @@ var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
 var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
 var themeToggleBtn = document.getElementById("theme-toggle");
 var uxArtImage = document.getElementById("uxArtImage");
+var SolanasImage = document.getElementById("SolanasImage");
+var FacultadDeDerechoImage = document.getElementById("FacultadDeDerechoImage");
+var BoxVisionImage = document.getElementById("BoxVisionImage");
 
 
 if (localStorage.getItem("color-theme") === "dark") {
   uxArtImage.src = "./assets/clients/uxart.png";
+  SolanasImage.src = "./assets/clients/solanasDark.png";
+  FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerechoDark.png";
+  BoxVisionImage.src = "./assets/clients/boxVisionDark.png";
 } else {
-  uxArtImage.src = "./assets/clients/uxartColor.png";
+  uxArtImage.src = "./assets/clients/uxart.png";
+  SolanasImage.src = "./assets/clients/solanas.png";
+  FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerecho.png";
+  BoxVisionImage.src = "./assets/clients/boxVision.png";
 }
 
 // Change the icons inside the button based on previous settings
@@ -35,20 +44,32 @@ themeToggleBtn.addEventListener("click", function () {
       document.documentElement.classList.add("dark");
       localStorage.setItem("color-theme", "dark");
       uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanasDark.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerechoDark.png";
+      BoxVisionImage.src = "./assets/clients/boxVisionDark.png";
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("color-theme", "light");
-      uxArtImage.src = "./assets/clients/uxartColor.png";
+      uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanas.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerecho.png";
+      BoxVisionImage.src = "./assets/clients/boxVision.png";
     }
   } else {
     if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("color-theme", "light");
-      uxArtImage.src = "./assets/clients/uxartColor.png";
+      uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanas.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerecho.png";
+      BoxVisionImage.src = "./assets/clients/boxVision.png";
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("color-theme", "dark");
       uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanasDark.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerechoDark.png";
+      BoxVisionImage.src = "./assets/clients/boxVisionDark.png";
     }
   }
 });

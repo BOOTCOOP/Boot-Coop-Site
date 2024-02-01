@@ -24,4 +24,7 @@
     .ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-6{
         text-align: center;
     }
+    .ayoan_whatsapp_chatbox_container .widget-close-btn-row{
+        text-align: left;
+    }
 }

@@ -55,7 +55,7 @@ var whatsappchat = {
             if(element !=null){
                 var chatBox = '<div class="ayoan_whatsapp_chatbox_container">' +
                     '<div class="rs-openChat" style="display: none"> <div class="ayoan_whatsapp_chatbox">' +
-                    '<div class="widget-wrapper"> <div class="widget-header"> <div class="col col-2" style="position: absolute; left:17px">' +
+                    '<div class="widget-wrapper"> <div class="widget-header"> <div class="col col-2 ws-img" style="position: absolute; left:17px">' +
                     '<img class="header-icon" src="assets/plugins/whatsApp/img/whatsapp_white.png"> </div><div class="col col-10">' +
                     '<div class="header-title">Iniciar Conversación</div><div class="header-content">'+settings.headerMessage+
                     '</div></div></div><div class="widget-body" style="padding: 20px;border: 1px solid #ccc;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);"><div class="body-title">'+settings.chatBoxMessage+

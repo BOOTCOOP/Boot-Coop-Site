@@ -33,7 +33,7 @@ var language = {
       home: "Inicio",
       about: "Nosotros",
       tech: "Tecnologías",
-      portfolio: "Portafolio",
+      portfolio: "Casos de éxito",
       contact: "Contacto"
     },
     title: setLanguage.bind(null, 'es'),
@@ -129,7 +129,7 @@ var language = {
       home: "Home",
       about: "About",
       tech: "Technologies",
-      portfolio: "Portfolio",
+      portfolio: "Success Stories",
       contact: "Contact"
     },
     title: setLanguage.bind(null, 'en'),

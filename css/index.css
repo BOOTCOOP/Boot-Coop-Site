@@ -34,8 +34,9 @@ body {
 }
 
 .nav-link.active {
-  color: white; /* Estilo para el enlace activo (cambia a tu color deseado) */
+    font-weight:800;
 }
+
 
 #typed-container {
   min-height: 150px;

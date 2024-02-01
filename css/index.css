@@ -44,3 +44,16 @@ body {
 #typed-output {
   display: inline-block;
 }
+.tooltip {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #333;
+}
+
+.dark-logo {
+  background-image: url('./assets/clients/uxart.png');
+}
+
+.light-logo {
+  background-image: url('./assets/clients/uxartColor.png');
+}

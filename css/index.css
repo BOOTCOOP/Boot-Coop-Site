@@ -64,3 +64,14 @@ body {
   background-image: url('./assets/clients/facultadDeDerecho.png');
   background-image: url('./assets/clients/boxVision.png');
 }
+
+@media screen and (max-width: 767px) {
+  footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+}

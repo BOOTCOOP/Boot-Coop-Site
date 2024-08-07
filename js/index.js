@@ -1,5 +1,23 @@
 var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
 var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+var themeToggleBtn = document.getElementById("theme-toggle");
+var uxArtImage = document.getElementById("uxArtImage");
+var SolanasImage = document.getElementById("SolanasImage");
+var FacultadDeDerechoImage = document.getElementById("FacultadDeDerechoImage");
+var BoxVisionImage = document.getElementById("BoxVisionImage");
+
+
+if (localStorage.getItem("color-theme") === "dark") {
+  uxArtImage.src = "./assets/clients/uxart.png";
+  SolanasImage.src = "./assets/clients/solanasDark.png";
+  FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerechoDark.png";
+  BoxVisionImage.src = "./assets/clients/boxVisionDark.png";
+} else {
+  uxArtImage.src = "./assets/clients/uxart.png";
+  SolanasImage.src = "./assets/clients/solanas.png";
+  FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerecho.png";
+  BoxVisionImage.src = "./assets/clients/boxVision.png";
+}
 
 // Change the icons inside the button based on previous settings
 if (
@@ -14,37 +32,50 @@ if (
 
 var themeToggleBtn = document.getElementById("theme-toggle");
 
+// Cambiar la imagen también al hacer clic en el botón
 themeToggleBtn.addEventListener("click", function () {
   // toggle icons inside button
   themeToggleDarkIcon.classList.toggle("hidden");
   themeToggleLightIcon.classList.toggle("hidden");
 
-  // if set via local storage previously
+  // Cambiar el tema
   if (localStorage.getItem("color-theme")) {
     if (localStorage.getItem("color-theme") === "light") {
       document.documentElement.classList.add("dark");
       localStorage.setItem("color-theme", "dark");
+      uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanasDark.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerechoDark.png";
+      BoxVisionImage.src = "./assets/clients/boxVisionDark.png";
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("color-theme", "light");
+      uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanas.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerecho.png";
+      BoxVisionImage.src = "./assets/clients/boxVision.png";
     }
-
-    // if NOT set via local storage previously
   } else {
     if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("color-theme", "light");
+      uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanas.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerecho.png";
+      BoxVisionImage.src = "./assets/clients/boxVision.png";
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("color-theme", "dark");
+      uxArtImage.src = "./assets/clients/uxart.png";
+      SolanasImage.src = "./assets/clients/solanasDark.png";
+      FacultadDeDerechoImage.src = "./assets/clients/facultadDeDerechoDark.png";
+      BoxVisionImage.src = "./assets/clients/boxVisionDark.png";
     }
   }
 });
 
 // Implemento ENVIO de datos de Formulario
 const $form = document.querySelector("#form");
-const $api =
-  "https://v1.nocodeapi.com/bootcoop/google_sheets/gRLcUpIymIlVoBrX?tabId=contacto";
 $form.addEventListener("submit", handleSubmit);
 
 async function handleSubmit(event) {
@@ -54,19 +85,53 @@ async function handleSubmit(event) {
   const subject = form.get("subject");
   const message = form.get("message");
 
-  const response = await fetch($api, {
-    method: this.method,
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify([
-      [email, subject, message, new Date().toLocaleString()],
-    ]),
-  });
-  if (response.ok) {
-    const reseteo = this.reset();
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  var requestOptions = {
+    method: "post",
+    headers: myHeaders,
+    redirect: "follow",
+    body: JSON.stringify([[email, subject, message, new Date().toLocaleString()]])
+  };
+
+  // Intenta enviar los datos al servidor
+  try {
+    const response = await fetch("https://v1.nocodeapi.com/bootcoop/google_sheets/OYBWLbNeeBCvOaeU?tabId=contacto", requestOptions);
+
+    if (response.ok) {
+      // Muestra el mensaje de toast si la respuesta es exitosa
+      const toastElement = document.getElementById("toast-simple");
+      toastElement.classList.remove("hidden");
+
+      // Oculta el mensaje después de 3 segundos (ajusta el tiempo según tus preferencias)
+      setTimeout(() => {
+        toastElement.classList.add("hidden");
+      }, 3000);
+
+      // También puedes reiniciar el formulario o realizar otras acciones después de enviar
+      $form.reset();
+    } else {
+      console.log('Error al enviar el formulario');
+    }
+  } catch (error) {
+    console.error('Error en la solicitud:', error);
   }
 }
+
+
+//   const response = await fetch($api, {
+//     method: 'POST',
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify([
+//       [email, subject, message, new Date().toLocaleString()],
+//     ]),
+//   });
+//   if (response.ok) {
+//     const reseteo = this.reset();
+//   }
+// }
 
 //particulas
 
@@ -179,4 +244,16 @@ particlesJS({
     },
   },
   retina_detect: true,
+});
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function () {
+    // Elimina la clase "active" de todos los enlaces
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Agrega la clase "active" al enlace clicado
+    this.classList.add('active');
+  });
 });

@@ -10,32 +10,59 @@
 
       gtag('config', 'G-7EFW5ZQKF2');
     </script>
+
+    <!-- Metadatos -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="Boot Coop - Cooperativa de Desarrollo web, Mobile, E-Commerce, Diseño web y UX/UI. Pertenecemos a la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento FACT[TIC] - Bienvenides a Boot Coop" />
+    <meta name="keywords" content="cooperativa, desarrollo web trabajo, desarrollo web lenguajes, desarrollo web empresas, desarrollo web, desarrollo web front-end, desarrollo, servicios, tecnología, Boot Coop, bootcoop, develop, design, ux, ui, web, mobile, android, ios, react, native, angular, python" />
+    <meta name="author" content="Boot Coop" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://bootcoop.io/">	
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES"><meta property="og:title" content="Boot Coop - Cooperativa de Desarrollo web, Mobile, E-Commerce, Diseño web y UX/UI. Pertenecemos a la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento FACT[TIC] %">
+    <meta property="og:description" content="Boot Coop - Cooperativa de Desarrollo web, Mobile, E-Commerce, Diseño web y UX/UI. Pertenecemos a la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento FACT[TIC] - Bienvenides a Boot Coop">
+    <meta property="og:url" content="https://bootcoop.io/">
+    <meta property="og:site_name" content="Boot Coop - Cooperativa de Desarrollo web, Mobile, E-Commerce, Diseño web y UX/UI. Pertenecemos a la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento FACT[TIC]">
+    <meta property="article:publisher" content="https://www.instagram.com/cooperativaboot/">
+    <meta property="article:modified_time" content="2024-02-01T20:33:55+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CoopBoot">
+    <meta name="twitter:label1" content="Tiempo de lectura">
+    <meta name="twitter:data1" content="1 minuto">
+    
     <link rel="stylesheet" href="./css/index.css">
+    <!-- CDN DE ANIMATED CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- CDN DE TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <!-- CDN DE FLOWBITE -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="http://drive.google.com/uc?export=view&id=1e9ghZwtWgswSg6HKwmHB8be6hDN5y1sb" />
-    <title>Boot Coop</title>
+    <link rel="icon" href="./assets/bootcooplogo.png" />
+    <!-- WhatsApp Plugin CSS -->
+     <link rel="stylesheet" href="assets/plugins/whatsApp/css/whatsapp-chat-min.css" />
+    <title>Boot Coop - Desarrollo y Servicios Tecnológicos</title>
   </head>
 
   <body class="dark:bg-gray-900">
     <!-- NAVBAR -->
-    <!-- Modificar https://bootcoop.github.io/Boot-Coop-Site/ por dominio de la web -->
-    <!-- MiguelPrueba -->
 
     <header>
       <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 mt-0 fixed w-full z-20 top-0 dark:bg-gray-900">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="/" class="flex items-center">
+          <a href="/" title="Servicios de Desarrollo Tecnológico en Boot Coop" class="flex items-center">
             <img
-              src="./assets/logoRecortado.png"
+              src="./assets/bootcooplogo.png"
               class="m-3 h-10 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)]"
               alt="Boot Coop logo"
             />
@@ -98,7 +125,7 @@
                 <li>
                   <a
                     href="#en"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="block py-2 px-4 text-sm text-primary-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                     role="menuitem"
                   > EN
                   </a>
@@ -106,7 +133,7 @@
                 <li>
                   <a
                     href="#es"
-                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="block py-2 px-4 text-sm text-primary-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                     role="menuitem"
                   > ES
                   </a>
@@ -140,6 +167,7 @@
             class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-language-select"
           >
+          <nav>
             <ul
               class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
             >
@@ -147,7 +175,7 @@
                 <a
                   id="nav-home"
                   href="#"
-                  class="block py-2 pr-4 pl-3 text-white bg-primary-700 rounded md:bg-transparent md:text-primary-700 md:p-0 dark:text-white"
+                  class="text-primary-700 dark:text-white nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 active"
                   aria-current="page"
                   >Inicio</a
                 >
@@ -156,7 +184,7 @@
                 <a
                   id="nav-about"
                   href="#aboutus"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="text-primary-700 dark:text-white nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   >Nosotros</a
                 >
               </li>
@@ -164,7 +192,7 @@
                 <a
                   id="nav-tech"
                   href="#tech"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="text-primary-700 dark:text-white nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   >Tecnologías</a
                 >
               </li>
@@ -172,42 +200,39 @@
                 <a
                   id="nav-portfolio"
                   href="#portfolio"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Portafolio</a
+                  class="text-primary-700 dark:text-white nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Casos de éxito</a
                 >
               </li>
               <li>
                 <a
+                  id="nav-contact"
                   href="#contactus"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="text-primary-700 dark:text-white nav-link block py-2 pr-4 pl-3 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                   >Contacto</a
                 >
               </li>
             </ul>
+          </nav>
           </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <!-- HERO -->
-
-      <!-- sm	640px	@media (min-width: 640px) { ... }
-md	768px	@media (min-width: 768px) { ... }
-lg	1024px	@media (min-width: 1024px) { ... }
-xl	1280px	@media (min-width: 1280px) { ... }
-2xl	1536px	@media (min-width: 1536px) { ... } -->
 
       <section class="relative h-screen flex flex-col justify-center items-center">
         <div id="particles-js" class="h-full w-full absolute"></div>
         <img
-          class="z-10 my-8 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] w-64 sm:w-80 md:w-96 lg:w-128 xl:w-144 2xl:w-160"
-          src="./assets/bootcoopRecortado.png"
+          class="z-10 my-8 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] w-64 sm:w-80 md:w-96 lg:w-128 xl:w-144 2xl:w-160 animate__animated animate__fadeInUp"
+          src="./assets/bootcooplogocompleto.png"
           alt="logo"
         />
-        <h1 id="title" class="z-10 my-9 tracking-tight leading-none text-gray-900 dark:text-white">
-          Cooperativa de soluciones IT
-        </h1>
+        <div id="typed-container">
+          <span class="display: inline-block;">
+          <h1 id="typed-output" class="z-10 my-9 tracking-tight leading-none text-gray-900 dark:text-white animate__animated animate__fadeInUp"></h1>
+        </span>
+        </div>
         <a
           id="contact_us"
           href="#contactus"
@@ -224,11 +249,11 @@ xl	1280px	@media (min-width: 1280px) { ... }
         <div class="mb-8 lg:mb-16 text-center">
           <h2
             id="about_us-title"
-            class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white"
+            class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white animate__animated animate__fadeInUp"
           >
             Nosotros
           </h2>
-          <p id="about_us-text" class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          <p id="about_us-text" class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl animate__animated animate__fadeInUp">
             Somos una cooperativa de trabajo con el objetivo de brindar un atractivo producto a la medida de tus necesidades. Diseñamos y desarrollamos sitios web y aplicaciones para el proyecto que tenés en mente, tanto para grandes instituciones o empresas, como páginas personales o profesionales.
           </p>
         </div>
@@ -504,10 +529,10 @@ xl	1280px	@media (min-width: 1280px) { ... }
 
       <!-- CARDS PARA PORTFOLIO -->
 
-      <section id="portfolio" class="pt-24 px-4 lg:px-6 max-w-screen-lg mx-auto">
+      <section id="portfolio" class="pt-24 px-4 lg:px-6 max-w-screen-2xl mx-auto">
         <div class="mb-8 lg:mb-16 text-center">
           <h2 id="portfolio-title" class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white">
-            Portafolio
+            Casos de éxito
           </h2>
           <p
             id="portfolio-text"
@@ -518,7 +543,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
         </div>
         <div class="flex flex-wrap mx-8 gap-8 justify-center">
           <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://qa.derservicios.com.ar/">
+            <a target="_blank" href="https://www.buspack.com.ar/">
               <img
                 class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
                 src="./assets/projects/buspack.png"
@@ -533,13 +558,77 @@ xl	1280px	@media (min-width: 1280px) { ... }
                 id="portfolio-item_1-subtitle"
                 class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
               >
-                Plataforma online de logística, basada en la gestión de encomiendas para todo el país
+              Plataforma líder en logística, especializada en la gestión eficiente de encomiendas a nivel nacional. Nuestra solución online proporciona un sistema integral que optimiza el proceso logístico, asegurando entregas rápidas y seguras. 
+              </p>                
+            </div>
+          </div>
+          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
+            <a target="_blank" href="http://www.derecho.uba.ar/">
+              <img
+                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+                src="./assets/projects/facultaddedercho.png"
+                alt="Facultad de derecho"
+              />
+            </a>
+            <div class="p-5">
+              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+                Facultad de derecho
+              </h3>
+              <p
+                id="portfolio-item_2-subtitle"
+                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
+              >
+              Colaboramos en el mantenimiento del sitio web de la Facultad de Derecho, garantizando una presencia en línea actualizada y funcional para satisfacer las necesidades de la comunidad académica y los visitantes.
+              </p>                
+            </div>
+          </div>
+          
+
+          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
+            <a target="_blank" href="https://dynamoiot.com/">
+              <img              
+                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+                src="./assets/projects/dynamoiot.png"
+                alt="Dynamo IOT"
+              />
+            </a>
+            <div class="p-5">
+              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+                Dynamo IOT
+              </h3>
+              <p
+                id="portfolio-item_3-subtitle"
+                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
+              >
+              Backoffice logístico personalizado para una empresa destacada en el sector. Esta herramienta permite una administración eficiente de conductores y vehículos, mejorando la planificación de rutas y la asignación de recursos.
+              </p>                
+            </div>
+          </div>
+
+
+          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
+            <a target="_blank" href="https://moveme.vercel.app/">
+              <img
+                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
+                src="./assets/projects/moveme.png"
+                  alt="moveme"
+              />
+            </a>
+            <div class="p-5">
+              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+                Moveme
+              </h3>
+              <p
+                id="portfolio-item_4-subtitle"
+                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
+              >
+              Aplicación web responsive diseñada para emprendimientos de Personal Trainer. Brinda una experiencia intuitiva, facilitando la interacción entre entrenadores y clientes para una gestión efectiva.
               </p>                
             </div>
           </div>
 
           <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://somosgrissia.com/">
+            <a target="_blank" href="https://grissia.vercel.app/">
               <img
                 class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
                 src="./assets/projects/somosGrissia.png"
@@ -551,58 +640,137 @@ xl	1280px	@media (min-width: 1280px) { ... }
                 Somos Grissia
               </h3>
               <p
-                id="portfolio-item_2-subtitle"
+                id="portfolio-item_5-subtitle"
                 class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
               >
-                Web Responsive desarrollada en JavaScript para emprendimiento de Community Manager
-              </p>                
-            </div>
-          </div>
-
-
-          <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://moveme.vercel.app/">
-              <img
-                class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
-                src="./assets/projects/moveme.png"
-                  alt="move.me"
-              />
-            </a>
-            <div class="p-5">
-              <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                Move.me
-              </h3>
-              <p
-                id="portfolio-item_3-subtitle"
-                class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
-              >
-              Web Responsive desarrollada en React para emprendimiento de Personal Trainer
+              Plataforma web responsive, con diseño minimalista para emprendimientos de Community Manager. Ofrece herramientas eficaces para gestionar y potenciar la presencia online, simplificando la tarea de administrar contenido y aumentar la visibilidad en redes sociales.
               </p>                
             </div>
           </div>
 
           <div class="bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96 md:w-80 lg:w-96 overflow-hidden">
-            <a target="_blank" href="https://projectiplan-b249d.web.app/">
+            <a target="_blank" href="https://boxvision.com.ar/tablets/facetracking/">
             <img              
               class="w-full object-cover hover:scale-105 duration-300 cursor-pointer"
-              src="./assets/projects/IPLAN-Formulario.png"
-              alt="Formulario IPLAN Biz"
+              src="./assets/projects/boxvision.png"
+              alt="Box Vision"
             />
           </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                Formulario IPLAN Biz
+                Box Vision
               </h3>
               <p
-                id="portfolio-item_3-subtitle"
+                id="portfolio-item_6-subtitle"
                 class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400 text-center"
               >
-              Formulario desarrollado en JavaScript para incrementar las ganancias del negocio de Cloud
-              </p>                
+              Aplicación móvil de óptica con realidad aumentada para probar virtualmente distintos modelos de lentes, ofreciendo una experiencia personalizada y conveniente.              
+            </p>                
             </div>
           </div>         
           
         </div>
+      </section>
+
+
+      <!-- NUESTROS CLIENTES -->
+
+      <section id="tech" class="pt-24 px-4 lg:px-6 max-w-screen-xl mx-auto">
+        <h2
+          id="clients-title"
+          class="mb-4 text-4xl tracking-tight text-center text-primary-700 dark:text-white"
+        >
+          Nuestros clientes
+        </h2>
+        <p id="clients-text" class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          Sabemos que es un mundo acelerado, por lo que es bueno tener opciones.
+        </p>
+        <div class="flex flex-wrap justify-center items-center gap-3 w-full overflow-x-auto">    
+          <img
+          data-tooltip-target="tooltip-Dynamo IOT" data-tooltip-placement="bottom" aria-labelledby="Dynamo IOT"
+              src="./assets/clients/dynamoiot.png"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-38 mx-auto"
+              alt="Dynamo IOT"
+            />
+          <div id="tooltip-Dynamo IOT" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Dynamo IOT
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Camarco" data-tooltip-placement="bottom" aria-labelledby="Camarco"
+              src="./assets/clients/camarco.png"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Camarco"
+            />
+          <div id="tooltip-Camarco" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Camarco
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Ux Art" data-tooltip-placement="bottom" aria-labelledby="Ux Art"
+              src="./assets/clients/uxart.png"
+              id="uxArtImage"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="UxArt"
+            />
+          <div id="tooltip-Ux Art" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Ux Art
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>      
+          <img
+              data-tooltip-target="tooltip-Box Vision" data-tooltip-placement="bottom" aria-labelledby="Box Vision"
+              src="./assets/clients/boxVision.png"
+              id="BoxVisionImage"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Box Vision"
+            />
+          <div id="tooltip-Box Vision" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Box Vision
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>    
+          <img
+              data-tooltip-target="tooltip-Solanas" data-tooltip-placement="bottom" aria-labelledby="Solanas"
+              src="./assets/clients/solanas.png"
+              id="SolanasImage"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Solanas"
+            />
+          <div id="tooltip-Solanas" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Solanas
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Municipalidad de Quilmes" data-tooltip-placement="bottom" aria-labelledby="Municipalidad de Quilmes"
+              src="./assets/clients/munidequilmes.png"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-24 mx-auto"
+              alt="Municipalidad de Quilmes"
+            />
+          <div id="tooltip-Municipalidad de Quilmes" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Municipalidad de Quilmes
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Buspack" data-tooltip-placement="bottom" aria-labelledby="Buspack"
+              src="./assets/clients/buspack.png"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="Buspack"
+            />
+          <div id="tooltip-Buspack" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Buspack
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <img
+              data-tooltip-target="tooltip-Facultad de Derecho" data-tooltip-placement="bottom" aria-labelledby="FacultadDeDerecho"
+              src="./assets/clients/facultadDeDerecho.png"
+              id="FacultadDeDerechoImage"
+              class="drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] flex flex-wrap justify-center gap-12 w-32 mx-auto"
+              alt="FacultadDeDerecho"
+            />
+          <div id="tooltip-Facultad de Derecho" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+            Facultad de Derecho
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>             
+        </div>       
       </section>
 
       <!-- FORMULARIO DE CONTACTO -->
@@ -672,117 +840,169 @@ xl	1280px	@media (min-width: 1280px) { ... }
             >
               Enviar mensaje
             </button>
-          </form>
+          </form>       
+          <!-- ALERTA DE MENSAJE ENVIADO -->  
+          <div class="absolute bottom right-0 mb-16 mr-4">
+            <div id="toast-simple" class="hidden flex right-0 w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert">
+              <svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+              </svg>
+            <div class="ps-4 text-sm font-normal">Message sent successfully.</div>
+          </div>          
         </div>
+        
+        
+
       </section>
     </main>
 
+    
+
     <footer class="p-4 sm:p-6 dark:bg-gray-800">
-      <!-- footer -->
-      <div class="mx-auto max-w-screen-xl">
-        <div class="flex items-center justify-center">
-          <!-- <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-            >© 2022
-            <a
-              href="https://bootcoop.github.io/Boot-Coop-Site/"
-              target="_blank"
-              class="hover:underline"
-              >Boot Coop</a
-            >. <span id="footer-rights">Todos los derechos reservados.</span>
-          </span> -->
-          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a
-              href="https://www.facebook.com/profile.php?id=100083555065436"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              target="_blank"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.instagram.com/coopboot/"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              target="_blank"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://twitter.com/CoopBoot"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              target="_blank"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://bootcoop.io"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              target="_blank"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <!-- <a
-              href="https://github.com/BOOTCOOP"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a> -->
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between footer-content">
+          <div class="mb-6 md:mb-0">
+              <a href="https://Bootcoop.io/" class="flex items-center">
+                  <img src="./assets/bootcooplogo.png" class="m-3 h-10 drop-shadow-[0_0_4px_rgba(250,250,250,0.9)]" alt="BootCoop Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Boot Coop</span>
+              </a>
+              <div class="mt-8"></div>
+              <p class="mb-8 lg:mb-16 font-light text-gray-500 dark:text-gray-400 sm:text-lg">Explora nuestras soluciones y <br>servicios de tecnología de vanguardia...</p>
           </div>
+          <div class="grid lg:grid-cols gap-8 sm:gap-6 mb-6">          
+            <div class="text-center">
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Somos parte de</h2>
+              <a class="email flex items-center text-gray-500 dark:text-gray-400" href="https://www.facttic.org.ar/" target="_blank" rel="noopener">
+                <img class="mx-auto drop-shadow-[0_0_4px_rgba(250,250,250,0.9)] w-52 h-auto cursor-pointer" src="./assets/logofacttic.svg" alt="Logo de Facttic" border="0">                
+              </a>
+            </div>        
+          </div>   
+          <div class="grid lg:grid-cols gap-8 sm:gap-6">          
+            <div>
+                <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Seguinos</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="https://github.com/BOOTCOOP" target="_blank" class="hover:underline ">Github</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="https://www.instagram.com/cooperativaboot/" target="_blank" class="hover:underline">Instagram</a>
+                    </li>
+                    <li class="mb-6">
+                      <a href="https://www.facebook.com/profile.php?id=100083555065436" target="_blank" class="hover:underline">Facebook</a>
+                    </li>
+                </ul>
+            </div>            
+          </div>   
+          <div class="grid grid-cols-1 gap-8 sm:gap-6">          
+            <div>
+              <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contactanos</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <p>
+                      <a class="email flex items-center text-gray-500 dark:text-gray-400" href="mailto:cooperativaboot@gmail.com">
+                        <svg fill="currentColor" height="auto" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 75.294 75.294" xml:space="preserve">
+                          <g>
+                            <path d="M66.097,12.089h-56.9C4.126,12.089,0,16.215,0,21.286v32.722c0,5.071,4.126,9.197,9.197,9.197h56.9
+                              c5.071,0,9.197-4.126,9.197-9.197V21.287C75.295,16.215,71.169,12.089,66.097,12.089z M61.603,18.089L37.647,33.523L13.691,18.089
+                              H61.603z M66.097,57.206h-56.9C7.434,57.206,6,55.771,6,54.009V21.457l29.796,19.16c0.04,0.025,0.083,0.042,0.124,0.065
+                              c0.043,0.024,0.087,0.047,0.131,0.069c0.231,0.119,0.469,0.215,0.712,0.278c0.025,0.007,0.05,0.01,0.075,0.016
+                              c0.267,0.063,0.537,0.102,0.807,0.102c0.001,0,0.002,0,0.002,0c0.002,0,0.003,0,0.004,0c0.27,0,0.54-0.038,0.807-0.102
+                              c0.025-0.006,0.05-0.009,0.075-0.016c0.243-0.063,0.48-0.159,0.712-0.278c0.044-0.022,0.088-0.045,0.131-0.069
+                              c0.041-0.023,0.084-0.04,0.124-0.065l29.796-19.16v32.551C69.295,55.771,67.86,57.206,66.097,57.206z"/>
+                          </g>
+                        </svg>
+                        <span style="margin-left: 8px;">cooperativaboot@gmail.com</span>
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+              </div>            
+            </div>                    
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">         
+        <a href="http://qr.afip.gob.ar/?qr=PtAj4fIAJRmJEt-1W6Kdvg,," target="_F960AFIPInfo">
+          <img class="w-10 mr-12 h-auto cursor-pointer" src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0">
+        </a>
+        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <a
+            href="https://www.facebook.com/profile.php?id=100083555065436"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            target="_blank"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/cooperativaboot/"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            target="_blank"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com/CoopBoot"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            target="_blank"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/BOOTCOOP"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            target="_blank"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
         </div>
-      </div>
-    </footer>
-    <!-- PRUEBA FACU -->
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://bootcoop.io/" class="hover:underline">Boot Coop™</a>. All Rights Reserved.
+        </span>        
+    </div>
+  </div>
+</footer>
+
+
     <!-- SCRIPT DE FLOWBITE -->
     <script src="./tailwind.config.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
@@ -803,5 +1023,18 @@ xl	1280px	@media (min-width: 1280px) { ... }
     <script src="./js/particles.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/lang.js"></script>
+    <!-- Plugin WhatsApp -->
+    <div id="pluginWhatsApp"></div>
+    <script type="text/javascript" src="assets/plugins/whatsApp/js/whatsapp-chat.js"></script>
+    <script type="text/javascript" src="assets/plugins/whatsApp/config.js"></script>
+    <script type="text/javascript">
+        whatsappchat.configUser({
+            selector: config.general.selector,
+            users: usersWhats,
+            headerMessage: config.msg.headerMsg,
+            chatBoxMessage: config.msg.chatboxMsg,
+            color: config.msg.colorMsg,
+        });
+    </script>
   </body>
 </html>

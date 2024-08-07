@@ -16,3 +16,62 @@ h1 {
   text-align: center;
   padding: 0 8px;
 }
+
+.animate__animated {
+  animation-duration: 1s; /* Duración de la animación en segundos */
+  animation-delay: 0.5s; /* Retraso de la animación en segundos */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 150vh;
+}
+
+.nav-link {
+  color: #96a4b9; /* Estilo predeterminado para enlaces no activos */
+}
+
+.nav-link.active {
+    font-weight:800;
+}
+
+
+#typed-container {
+  min-height: 150px;
+}
+
+#typed-output {
+  display: inline-block;
+}
+.tooltip {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #333;
+}
+
+.dark-logo {
+  background-image: url('./assets/clients/uxart.png');
+  background-image: url('./assets/clients/solanasDark.png');
+  background-image: url('./assets/clients/facultadDeDerechoDark.png');
+  background-image: url('./assets/clients/boxVisionDark.png');
+}
+
+.light-logo {
+  background-image: url('./assets/clients/uxartColor.png');
+  background-image: url('./assets/clients/solanas.png');
+  background-image: url('./assets/clients/facultadDeDerecho.png');
+  background-image: url('./assets/clients/boxVision.png');
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+}

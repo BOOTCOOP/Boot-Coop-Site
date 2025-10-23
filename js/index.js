@@ -96,7 +96,7 @@ async function handleSubmit(event) {
 
   // Intenta enviar los datos al servidor
   try {
-    const response = await fetch("https://v1.nocodeapi.com/bootcoop/google_sheets/OYBWLbNeeBCvOaeU?tabId=contacto", requestOptions);
+    const response = await fetch("https://formspree.io/f/xdkwqegg", requestOptions);
 
     if (response.ok) {
       // Muestra el mensaje de toast si la respuesta es exitosa

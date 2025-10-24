@@ -80,8 +80,13 @@ $form.addEventListener("submit", handleSubmit);
 
 async function handleSubmit(event) {
   event.preventDefault();
-
   const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+  
+  // Concatenar subject al message
+  if (data.subject && data.message) {
+    data.message = "Asunto: " + data.subject + "\n Mensaje: " + data.message;
+  }
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
@@ -89,7 +94,7 @@ async function handleSubmit(event) {
     method: "post",
     headers: myHeaders,
     redirect: "follow",
-    body: formData
+    body: JSON.stringify(data)
   };
 
   // Intenta enviar los datos al servidor
